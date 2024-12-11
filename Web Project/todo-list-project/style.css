@@ -3,52 +3,69 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100vh;
   margin: 0;
-  background-color: #f0f0f0;
+  background: linear-gradient(135deg, #fdfbfb, #e2d1c3);
+}
+
+header h1 {
+  color: #7a5547;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  font-size: 36px;
 }
 
 .todo-container {
-  background-color: white;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 300px;
-}
-
-h1 {
-  text-align: center;
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
 }
 
 #todo-input {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin-bottom: 10px;
+  margin-top: 10px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 10px;
+}
+
+#add-btn {
+  margin-bottom: 10px;
 }
 
 button {
   width: 100%;
-  padding: 10px;
-  background-color: #28a745;
-  color: white;
+  padding: 12px;
+  background: #68aaf7;
+  color: #ffffff;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: background 0.3s;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #218838;
+  background: #5897d6;
+}
+
+button:active {
+  transform: scale(0.98);
 }
 
 #todo-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 #todo-list li {
@@ -57,14 +74,35 @@ button:hover {
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid #ddd;
+  transition: background 0.3s;
+  gap: 10px;
+  margin-bottom: 8px;
 }
 
-#todo-list li.done {
+#todo-list li:hover {
+  background: #f9f9f9;
+}
+
+#todo-list li.done span {
   text-decoration: line-through;
   color: grey;
 }
 
 button.delete-btn {
-  background-color: red;
-  margin: 10px;
+  background: #f28c8c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button.delete-btn:hover {
+  background: #e57373;
+}
+
+footer {
+  margin-top: 20px;
+  color: #7a5547;
 }
