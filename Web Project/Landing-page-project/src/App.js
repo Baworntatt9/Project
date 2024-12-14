@@ -51,7 +51,7 @@ const App = () => {
           <p> Modern elegance, perfect for everyday use.</p>
         </div>
       </section>
-      <section id="flash sales" className="fs">
+      <section id="flash sale" className="fs">
         <div className="fs-content">
           <CountdownTimer initialTime={3600} />
           <p>We sell it for 25 satang each, buy now!</p>
