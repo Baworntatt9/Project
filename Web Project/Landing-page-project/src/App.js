@@ -29,7 +29,7 @@ const App = () => {
         </div>
         <div>
           <h3>Premium Quality</h3>
-          <p>Made with high-grade stainless steel, mined by Boon.</p>
+          <p>Made with high-grade stainless stee.</p>
         </div>
         <div>
           <h3>Eco-Friendly</h3>
@@ -67,7 +67,7 @@ const App = () => {
       </section>
 
       <footer>
-        <p>&copy; 2024 Boon's Thermal Bottle. All rights reserved.</p>
+        <p>&copy; 2024 Smart Thermal Bottle. All rights reserved.</p>
       </footer>
     </>
   );
