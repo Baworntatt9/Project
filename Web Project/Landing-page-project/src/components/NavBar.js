@@ -16,7 +16,7 @@ const NavBar = () => {
         <Link to="benefits" smooth={true}>
           Benefits
         </Link>
-        <Link to="flash sales" smooth={true}>
+        <Link to="flash sale" smooth={true}>
           Flash sale
         </Link>
         <Link to="rate us" smooth={true}>
