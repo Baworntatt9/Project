@@ -17,7 +17,7 @@ const NavBar = () => {
           Benefits
         </Link>
         <Link to="flash sales" smooth={true}>
-          Flash sales
+          Flash sale
         </Link>
         <Link to="rate us" smooth={true}>
           Rate-Us
