@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IdeaVault</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center mb-5">IdeaVault</h1>
+
+      <!-- Form เพิ่มไอเดีย -->
+      <form id="ideaForm" class="row g-3 mb-4">
+        <div class="col-md-4">
+          <input
+            type="text"
+            id="title"
+            class="form-control"
+            placeholder="Title"
+            required
+          />
+        </div>
+        <div class="col-md-4">
+          <input
+            type="text"
+            id="description"
+            class="form-control"
+            placeholder="Description"
+            required
+          />
+        </div>
+        <div class="col-md-4">
+          <input
+            type="text"
+            id="categories"
+            class="form-control"
+            placeholder="Categories (comma-separated)"
+          />
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary mt-2">Add Idea</button>
+        </div>
+      </form>
+
+      <!-- Filter Tags -->
+      <div id="categoryTags" class="d-flex flex-wrap mb-3"></div>
+
+      <!-- แสดงรายการไอเดีย -->
+      <ul id="ideaList" class="list-group"></ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
